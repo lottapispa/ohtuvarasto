@@ -30,9 +30,5 @@ jobs:
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
-      - name: Go into shell
-        run: poetry shell
       - name: Pylint
         run: pylint src
-      - name: Exit from shell
-        run: exit
